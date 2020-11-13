@@ -1,0 +1,80 @@
+body {
+
+    background-image: url(./Daten/bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 700px;
+}
+
+.Stern {
+
+    position: absolute;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    left: 500px;
+}
+
+.Stern2 {
+
+    position: absolute;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 450px;
+    left: 600px;
+}
+
+.Stern3 {
+
+    position: absolute;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Stern4 {
+
+    position: absolute;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 450px;
+    left: 860px;
+}
+
+.Stern:hover {
+
+    background-image: url(./Daten/stern_hover.png);
+}
+
+.Stern2:hover {
+
+    background-image: url(./Daten/stern_hover.png);
+}
+
+.Stern3:hover {
+
+    background-image: url(./Daten/stern_hover.png);
+}
+
+.Stern4:hover {
+
+    background-image: url(./Daten/stern_hover.png);
+}
+
+.Text {
+
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    margin: top;
+    margin-top: -190px;
+}

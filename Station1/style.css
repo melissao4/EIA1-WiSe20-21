@@ -1,0 +1,48 @@
+body {
+
+    background-image: url(./Daten/bg2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 700px;
+    
+
+}
+
+.Karte {
+
+   
+}
+
+.Pinguin {
+
+    position: absolute;
+    bottom: 90px;
+    right: 40px;
+    left: 910px;
+
+    
+}
+
+.Busch {
+
+    position: absolute;
+    left: 360px;
+    top: 100px;
+}
+
+.Inhalt {
+
+    position: absolute;
+    text-align: left;
+    color: lavender;
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+
+
+
