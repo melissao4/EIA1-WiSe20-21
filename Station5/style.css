@@ -1,0 +1,24 @@
+body {
+
+    background-image: url(./Daten/bg\ \(1\).png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 700px;
+}
+
+.Formular {
+    position: absolute;
+    text-align: left;
+    display: flex;
+    margin: top;
+    margin-top: 0px;
+    margin-left: -200px;
+    color: white;
+}
+
+h1 {
+
+    font-size: large;
+}

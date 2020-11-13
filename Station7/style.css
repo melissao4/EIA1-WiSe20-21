@@ -1,0 +1,52 @@
+body {
+
+    background-image: url(./Daten/bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 700px;
+}
+
+.Wrapper {
+
+
+}
+
+.Busch {
+
+    position: absolute;
+    left: 390px;
+    top: 100px;
+}
+
+.Text {
+
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    margin: top;
+    color: white;
+}
+
+.gif {
+
+    position: absolute;
+    left: 590px;
+    top: 290px; 
+}
+
+.Video {
+
+    position: absolute;
+    left: 760px;
+    top: 210px;
+}
+
+.Geschenke {
+
+    position: absolute;
+    left: 850px;
+    top: 450px;
+    z-index: 1;
+}
