@@ -1,0 +1,35 @@
+body{
+    background-image: url(./Daten/bg.png);
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 160px;
+    left: 460px;
+}
+
+.banderole{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 433px;
+    left: 830px;
+    z-index: 1;
+}
+
+.video{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 190px;
+    left: 480px;
+
+}
