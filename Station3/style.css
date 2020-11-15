@@ -76,5 +76,6 @@ body {
     text-align: justify;
     display: flex;
     margin: top;
+    top: 190px;
     color: white;
 }
