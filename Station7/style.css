@@ -21,7 +21,7 @@ width: 600px;
 }
 
 .Plant {
-
+position: absolute;
 left: -10%;
 top: -10%;
 }
@@ -29,9 +29,7 @@ top: -10%;
 .Text {
 
     position: absolute;
-    text-align: justify;
-    display: flex;
-    margin: top;
+    margin: 30px 0;
     color: white;
 }
 
