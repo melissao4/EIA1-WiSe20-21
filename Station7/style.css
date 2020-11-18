@@ -22,8 +22,8 @@ width: 600px;
 
 .Plant {
 
-    left: 420px;
-    top: 800px;
+left: -10%;
+top: -10%;
 }
 
 .Text {
@@ -35,21 +35,24 @@ width: 600px;
     color: white;
 }
 
-.gif {
+.Stern {
 
-    left: 200px;
-    top:200px;
+    position: absolute;
+    left: 30%;
+    top: 22%;
 }
 
 .Video {
 
-    left: 750px;
-    top: 210px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
 }
 
 .Gifts {
 
-    left: 930px;
-    top: 400px;
+    position: absolute;
+    left: 65%;
+    top: 70%;
     z-index: 1;
 }
