@@ -8,12 +8,14 @@ body {
     background-image: url(./Daten/bg.png);
     align-items: center;
     justify-content: center;
+    display: flex;
     height: 100%;
 }
 
 .Wrapper {
 
 position: relative;
+display: block;
 height: 400px;
 width: 600px;
 }
