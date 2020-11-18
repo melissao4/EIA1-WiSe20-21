@@ -14,7 +14,7 @@ body {
 
 .Karte {
 
-position: relative;
+position: absolute;
 display: block;
 height: 400px;
 width: 600px;
@@ -22,7 +22,6 @@ width: 600px;
 
 .Plant {
 
-    position: absolute;
     left: 420px;
     top: 800px;
 }
@@ -44,14 +43,12 @@ width: 600px;
 
 .Video {
 
-    position: absolute;
     left: 750px;
     top: 210px;
 }
 
 .Gifts {
 
-    position: absolute;
     left: 930px;
     top: 400px;
     z-index: 1;
