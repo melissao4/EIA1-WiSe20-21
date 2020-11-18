@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 
-.Wrapper {
+.Karte {
 
 position: relative;
 display: block;
@@ -20,7 +20,7 @@ height: 400px;
 width: 600px;
 }
 
-.Busch {
+.Plant {
 
     position: absolute;
     left: 390px;
@@ -50,7 +50,7 @@ width: 600px;
     top: 210px;
 }
 
-.Geschenke {
+.Gifts {
 
     position: absolute;
     left: 850px;
