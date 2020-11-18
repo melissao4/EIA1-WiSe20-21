@@ -1,14 +1,10 @@
-html {
-
-    width: 100%;
-}
-
 body {
 
     background-image: url(./Daten/bg2.png);
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100px;
     
 
 }
