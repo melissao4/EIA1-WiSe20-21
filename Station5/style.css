@@ -16,9 +16,8 @@ body {
     position: absolute;
     text-align: left;
     display: flex;
-    margin: top;
-    margin-top: 0px;
-    margin-left: -200px;
+    height: 400px;
+    width: 600px;
     color: white;
 }
 
