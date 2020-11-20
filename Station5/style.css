@@ -16,7 +16,7 @@ body {
 
     position: absolute;
     display: block;
-    height: 400px;
+    top: 200px;
     width: 600px;
 }
 
@@ -24,7 +24,7 @@ body {
     position: absolute;
     text-align: left;
     display: block;
-    margin: top;
+    top: 210px;
     color: white;
 }
 
