@@ -12,12 +12,21 @@ body {
     height: 100%;
 }
 
+.Wrapper {
+
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 600px;
+}
+
 .Formular {
     position: absolute;
     text-align: left;
-    display: flex;
-    height: 400px;
-    width: 600px;
+    display: block;
+    margin: top;
+    margin-top: 0px;
+    margin-left: -200px;
     color: white;
 }
 
