@@ -4,6 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     width: 1500px;
     height: 700px;
 }
