@@ -1,12 +1,15 @@
+.html {
+
+    height: 100%;
+}
+
 body {
 
     background-image: url(./Daten/bg\ \(1\).png);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 1500px;
-    height: 700px;
+    height: 100%;
 }
 
 .Formular {
