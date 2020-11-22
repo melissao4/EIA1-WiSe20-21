@@ -24,24 +24,27 @@ body {
 .Pinguin {
 
     position: absolute;
-    top: 510px;
-    left: 980px;
+    top: 70%;
+    left: 85%;
 }
 
 .Busch {
 
     position: absolute;
-    left: 450px;
-    top: 190px;
+    top: -10%;
+    left: -10%;
 }
 
 .Inhalt {
 
     position: absolute;
-    text-align: left;
-    color: lavender;
-    font-size: 20px;
     text-align: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: lavender;
+    font-size: 19px;
+    
+  
     
 
 }
