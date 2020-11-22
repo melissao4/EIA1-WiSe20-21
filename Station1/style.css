@@ -1,9 +1,16 @@
+html {
+
+    height: 100%;
+}
+    
+    
 body {
 
     background-image: url(./Daten/bg2.png);
     align-items: center;
     justify-content: center;
-    
+    display: flex;
+    height: 100%;
 
 }
 
