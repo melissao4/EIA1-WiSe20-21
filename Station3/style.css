@@ -1,53 +1,55 @@
+html{
+
+    height: 100%;
+}
+
+
 body {
 
     background-image: url(./Daten/bg.png);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1500px;
-    height: 700px;
+    height: 100%;
+    
 }
+
+.Karte {
+
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 600px;
+
+}
+
 
 .Stern {
 
     position: absolute;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    top: 300px;
-    left: 500px;
+    top: 200px;
+    left: 400px;
 }
 
 .Stern2 {
 
     position: absolute;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    top: 450px;
-    left: 600px;
+    top: 100px;
+    left: 300px;
 }
 
 .Stern3 {
 
     position: absolute;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
+    top: 210px;
+    left: 150px;
+}   
 
 .Stern4 {
 
     position: absolute;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    top: 450px;
-    left: 860px;
+    top: 130px;
+    left: 70px;
 }
 
 .Stern:hover {
@@ -70,12 +72,10 @@ body {
     background-image: url(./Daten/stern_hover.png);
 }
 
-.Text {
+h1 {
 
     position: absolute;
-    text-align: justify;
-    display: flex;
-    margin: top;
-    top: 190px;
+    text-align: center;
     color: white;
+    left: 60px;
 }
