@@ -15,9 +15,10 @@ body {
 }
 
 .Karte {
-    position: relative;
-
-   
+    position: absolute;
+    display: block;
+    height: 400px;
+    width: 600px;
 }
 
 .Pinguin {
