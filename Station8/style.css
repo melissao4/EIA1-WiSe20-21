@@ -3,13 +3,10 @@ body{
 }
 
 .container{
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    display: flex;
-    margin: auto;
-    top: 160px;
-    left: 460px;
+    display: block;
+    height: 400px;
+    width: 600px;
 }
 
 .banderole{
