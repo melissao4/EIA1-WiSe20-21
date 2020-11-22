@@ -1,5 +1,14 @@
+html {
+
+    height:100px;
+}
+
 body{
     background-image: url(./Daten/bg.png);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
 }
 
 .container{
@@ -7,6 +16,7 @@ body{
     display: block;
     height: 400px;
     width: 600px;
+    
 }
 
 .banderole{
