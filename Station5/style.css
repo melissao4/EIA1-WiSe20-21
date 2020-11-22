@@ -1,4 +1,4 @@
-.html {
+html {
 
     height: 100%;
 }
@@ -22,9 +22,6 @@ body {
 
 .Formular {
     position: absolute;
-    text-align: left;
-    display: block;
-    top: 310px;
     color: white;
 }
 
