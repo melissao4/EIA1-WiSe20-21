@@ -20,23 +20,15 @@ body{
 }
 
 .banderole{
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    display: flex;
-    margin: auto;
-    top: 433px;
-    left: 830px;
+    top: 260px;
+    left: 360px;
     z-index: 1;
 }
 
 .video{
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    display: flex;
-    margin: auto;
-    top: 190px;
+    top: 220px;
     left: 480px;
-
+    
 }
