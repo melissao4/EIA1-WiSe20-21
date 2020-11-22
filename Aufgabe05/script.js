@@ -15,7 +15,7 @@ var total = Africa2018 + SAmerica2018 + Europe2018 + NAmerica2018 + Asia2018 + A
 ///////////////
 console.log('Die Emission von Afrika ist' + Africa2018 + 'kg CO2');
 console.log('Relativ zur Gesamtemission der Welt verursacht Europa damit' + ((Africa2018 / total) * 100).toFixed(1) + '%');
-console.log('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert');
+console.log('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um' + (100 * (Africa2018 / Africa2008) - 100).toFixed(1) + '% verändert');
 console.log('2018 im Vergleich zu 2008 sind das' + (Africa2018 - Africa2008) + 'kg CO2');
 ///////////
 console.log('Die Emission von Afrika ist' + SAmerica2018 + 'kg CO2');
