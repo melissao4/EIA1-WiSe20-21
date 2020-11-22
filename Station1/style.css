@@ -24,9 +24,8 @@ body {
 .Pinguin {
 
     position: absolute;
-    bottom: 90px;
-    right: 40px;
-    left: 910px;
+    top: 380px;
+    left: 950px;
 
     
 }
@@ -34,8 +33,8 @@ body {
 .Busch {
 
     position: absolute;
-    left: 360px;
-    top: 100px;
+    left: 400px;
+    top: 150px;
 }
 
 .Inhalt {
