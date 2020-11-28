@@ -26,9 +26,9 @@ function myFunction(titleRegion: string, CO2:number, CO208:number) {
     document.querySelector("#titleRegion").innerHTML =  titleRegion;
     document.querySelector(".part1").innerHTML = (CO2 +"kg CO2");
     document.querySelector("p").innerHTML =  "Emission absolute of" + titleRegion + "in 2018";
-    document.querySelector(".part2").innerHTML = Math.round((CO2/GesamtEmi18)*100) + "%";
-    document.querySelector(".part3").innerHTML = Math.round(((CO2/CO208)-1)*100) + "%";
-    document.querySelector(".part4").innerHTML = Math.round(CO2-CO208) + "kg CO2";
+    document.querySelector(".part2").innerHTML = Math.round((CO2/GesamtEmi18)*100).toFixed(2) + "%";
+    document.querySelector(".part3").innerHTML = Math.round(((CO2/CO208)-1)*100).toFixed(2) + "%";
+    document.querySelector(".part4").innerHTML = Math.round(CO2-CO208).toFixed(2) + "kg CO2";
 
     document.querySelector (".chart").setAttribute('style', 'height:' + ((CO2/GesamtEmi18)*100) + "%");
 
