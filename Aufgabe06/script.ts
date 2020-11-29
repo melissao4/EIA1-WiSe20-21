@@ -1,22 +1,22 @@
-var africa08: number = 1028;
-var africa18: number = 1235.5;
+const africa08: number = 1028;
+const africa18: number = 1235.5;
 //////////////////////////////////
-var samerica08: number = 1132.6;
-var samerica18: number = 1261.5;
+const samerica08: number = 1132.6;
+const samerica18: number = 1261.5;
 //////////////////////////////////
-var europe08: number = 4965.7
-var europe18: number = 4209.3
+const europe08: number = 4965.7
+const europe18: number = 4209.3
 //////////////////////////////////
-var namerica08: number = 6600.4;
-var namerica18: number = 6035.6;
+const namerica08: number = 6600.4;
+const namerica18: number = 6035.6;
 //////////////////////////////////
-var asia08: number = 12954.7;
-var asia18: number = 16274.1;
+const asia08: number = 12954.7;
+const asia18: number = 16274.1;
 //////////////////////////////////
-var australia08: number = 1993;
-var australia18: number = 2100.5;
+const australia08: number = 1993;
+const australia18: number = 2100.5;
 //////////////////////////////////
-var GesamtEmi18: number = europe18 + namerica18 + samerica18 + africa18 + asia18 + australia18;
+const GesamtEmi18: number = europe18 + namerica18 + samerica18 + africa18 + asia18 + australia18;
 
 
 /// Funktionen
