@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+    background-image: url(../Aufgabe7/Daten/winter-1791370_1920.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+#container {
+    position: relative;
+    width: 480px;
+    height: 480px; 
+    
+}
+
+#container div{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 3px;
+}
+
+.container div:hover{
+    opacity: 90%;
+}
+
+.container img {
+    position: relative;
+    left: 160px;
+}
+
+.container img:hover {
+    opacity: 50%;
+}
+
+.pad1, .pad2, .pad3 {
+    background-color: #485c51;
+}
+
+#pad4, #pad5, #pad6 {
+    background-color: #67796b;
+}
+
+
+.pad7, .pad8, #pad9 {
+    background-color: #85674f;
+}
+
+#playbutton {
+    cursor: pointer;
+}
