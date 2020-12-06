@@ -6,47 +6,52 @@ html {
     justify-content: center;
  }
 
-#container {
+#Drumpad {
     position: relative;
     width: 480px;
     height: 480px; 
     
 }
 
-#container div{
+#Drumpad div{
     width: 150px;
     height: 150px;
     border-radius: 10%;
     display: inline-block;
     margin: 3px;
+    filter: drop-shadow(0px 0px 10px rgb(43, 54, 47));
 }
 
-.container div:hover{
+#Drumpad div:hover{
     opacity: 90%;
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
-.container img {
+#Drumpad img {
     position: relative;
     left: 160px;
+    
 }
 
-.container img:hover {
+#Drumpad img:hover {
     opacity: 50%;
+  
 }
 
-.pad1, .pad2, .pad3 {
+#dp1, #dp2, #dp3 {
     background-color: #485c51;
+    
 }
 
-#pad4, #pad5, #pad6 {
-    background-color: #67796b;
-}
-
-
-.pad7, .pad8, #pad9 {
+#dp4, #dp5, #dp6 {
     background-color: #85674f;
 }
 
-#playbutton {
-    cursor: pointer;
+
+#dp7, #dp8, #dp9 {
+
+ background-color: #67796b;
+
 }
+

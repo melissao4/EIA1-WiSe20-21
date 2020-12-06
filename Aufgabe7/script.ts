@@ -1,4 +1,4 @@
-var Drumpad: HTMLAudioElement [] = [
+const dp: HTMLAudioElement [] = [
     new Audio("Daten/kick.mp3"),
     new Audio("Daten/hihat.mp3"),
     new Audio("Daten/snare.mp3"),
@@ -10,40 +10,40 @@ var Drumpad: HTMLAudioElement [] = [
     new Audio("Daten/laugh-2.mp3"),]
     
     //Funktion 
-    function playSample(n: number): void {
-        Drumpad[n].play();
+    function playSample(x: number): void {
+        dp[x].play();
     };
     
     //Event
-    document.querySelector(".dp1").addEventListener("click", function () {
+    document.querySelector("#dp1").addEventListener("click", function () {
         playSample(0);
     });
-    document.querySelector(".dp2").addEventListener("click", function () {
+    document.querySelector("#dp2").addEventListener("click", function () {
         playSample(1);
     });
-    document.querySelector(".dp3").addEventListener("click", function () {
+    document.querySelector("#dp3").addEventListener("click", function () {
         playSample(2);
     });
-    document.querySelector(".dp4").addEventListener("click", function () {
+    document.querySelector("#dp4").addEventListener("click", function () {
         playSample(3);
     });
-    document.querySelector(".dp5").addEventListener("click", function () {
+    document.querySelector("#dp5").addEventListener("click", function () {
         playSample(4);
     });
-    document.querySelector(".dp6").addEventListener("click", function () {
+    document.querySelector("#dp6").addEventListener("click", function () {
         playSample(5);
     });
-    document.querySelector(".dp7").addEventListener("click", function () {
+    document.querySelector("#dp7").addEventListener("click", function () {
         playSample(6);
     });
-    document.querySelector(".dp8").addEventListener("click", function () {
+    document.querySelector("#dp8").addEventListener("click", function () {
         playSample(7);
     });
-    document.querySelector(".dp9").addEventListener("click", function () {
+    document.querySelector("#dp9").addEventListener("click", function () {
         playSample(8);
     });
     
-    //7.2
+// Aufgabe 7.2
     document.querySelector("#playbutton").addEventListener("click", function () {
         beat();
     });
@@ -52,13 +52,13 @@ var Drumpad: HTMLAudioElement [] = [
         setInterval(function () {
             setTimeout(() => {
                 playSample(0);
-            }, 200);
+            }, 100);
             setTimeout(() => {
                 playSample(1);
-            }, 200);
+            }, 100);
             setTimeout(() => {
                 playSample(2);
-            }, 200);
+            }, 100);
     
-        }, 300);
+        }, 500);
     };
