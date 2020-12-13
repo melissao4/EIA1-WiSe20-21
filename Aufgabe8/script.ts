@@ -7,81 +7,81 @@ const drumpad: HTMLAudioElement [] = [
     new Audio("Daten/F.mp3"),
     new Audio("Daten/G.mp3"),
     new Audio("Daten/laugh-1.mp3"),
-    new Audio("Daten/laugh-2.mp3"),]
+    new Audio("Daten/laugh-2.mp3")];
     
     //Funktion 
-    function playSample(x: number): void {
-        drumpad[x].play();
-    };
+function playSample(x: number): void {
+    drumpad[x].play();
+    }
     
     //Event
-    document.querySelector("#dp1").addEventListener("click", function () {
-        playSample(0);
+document.querySelector("#dp1").addEventListener("click", function (): void {
+    playSample(0);
     });
-    document.querySelector("#dp2").addEventListener("click", function () {
-        playSample(1);
+document.querySelector("#dp2").addEventListener("click", function (): void {
+    playSample(1);
     });
-    document.querySelector("#dp3").addEventListener("click", function () {
-        playSample(2);
+document.querySelector("#dp3").addEventListener("click", function (): void {
+    playSample(2);
     });
-    document.querySelector("#dp4").addEventListener("click", function () {
-        playSample(3);
+document.querySelector("#dp4").addEventListener("click", function (): void {
+    playSample(3);
     });
-    document.querySelector("#dp5").addEventListener("click", function () {
-        playSample(4);
+document.querySelector("#dp5").addEventListener("click", function (): void {
+    playSample(4);
     });
-    document.querySelector("#dp6").addEventListener("click", function () {
-        playSample(5);
+document.querySelector("#dp6").addEventListener("click", function (): void {
+    playSample(5);
     });
-    document.querySelector("#dp7").addEventListener("click", function () {
-        playSample(6);
+document.querySelector("#dp7").addEventListener("click", function (): void {
+    playSample(6);
     });
-    document.querySelector("#dp8").addEventListener("click", function () {
-        playSample(7);
+document.querySelector("#dp8").addEventListener("click", function (): void {
+    playSample(7);
     });
-    document.querySelector("#dp9").addEventListener("click", function () {
-        playSample(8);
+document.querySelector("#dp9").addEventListener("click", function (): void {
+    playSample(8);
     });
     
 
     // Variablen
 
-    const playbutton: HTMLElement = document.querySelector("#play");
-    const pausebutton: HTMLElement = document.querySelector("#stop");
-    const microbutton: HTMLElement = document.querySelector("#micro");
-    const trashbutton: HTMLElement = document.querySelector("#trash");
+const playbutton: HTMLElement = document.querySelector("#play");
+const pausebutton: HTMLElement = document.querySelector("#stop");
+const microbutton: HTMLElement = document.querySelector("#micro");
+const trashbutton: HTMLElement = document.querySelector("#trash");
 
     // Toggle
-    function toggleClass(firstbtn: HTMLElement, secondbtn: HTMLElement): void {
-        firstbtn.classList.add("hidden");
-        secondbtn.classList.remove("hidden");
+function toggleClass(firstbtn: HTMLElement, secondbtn: HTMLElement): void {
+    firstbtn.classList.add("hidden");
+    secondbtn.classList.remove("hidden");
     }
 
-    playbutton.addEventListener("click", function (): void {
-        toggleClass(playbutton, pausebutton);
-        loop(true);
+playbutton.addEventListener("click", function (): void {
+    toggleClass(playbutton, pausebutton);
+    loop(true);
     });
 
-    pausebutton.addEventListener("click", function (): void {
-        toggleClass(pausebutton, playbutton);
-        loop(false);
+pausebutton.addEventListener("click", function (): void {
+    toggleClass(pausebutton, playbutton);
+    loop(false);
     });
 
     // Micro Button Funktion
 
-    let dynbeat: number[] = [0, 1, 2];
-    let recording: boolean;
-    let dynbeatindex: number;
+let dynbeat: number[] = [0, 1, 2];
+let recording: boolean;
+let dynbeatindex: number;
 
-    function recordBeat(dynbeatindex: number): void {
-        console.log("Recording");
-        if (recording == true) {
-            dynbeat.push(dynbeatindex);
+function recordBeat(dynbeatindex: number): void {
+    console.log("Recording");
+    if (recording == true) {
+        dynbeat.push(dynbeatindex);
         }
     }
 
     // Micro Button Event
-    microbutton.addEventListener("click", function (): void {
+microbutton.addEventListener("click", function (): void {
         if (microbutton.classList.contains("active")) {
             microbutton.classList.remove("active");
             console.log("inaktiv");
@@ -94,10 +94,10 @@ const drumpad: HTMLAudioElement [] = [
     });
 
     // Play und Pause Funktion
-    let interval: number;
-    let index: number = 0;
+let interval: number;
+let index: number = 0;
 
-    function loop(pause: boolean): void {
+function loop(pause: boolean): void {
         if (pause == true) {
             interval = setInterval(function (): void {
                 playSample(dynbeat[index]);
@@ -115,7 +115,7 @@ const drumpad: HTMLAudioElement [] = [
     // Trash Button
     
 
-    trashbutton.addEventListener("click", function (): void {
+trashbutton.addEventListener("click", function (): void {
         dynbeat = [];
         console.log("deleted");
     });

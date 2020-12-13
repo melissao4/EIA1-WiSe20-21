@@ -7,13 +7,12 @@ var drumpad = [
     new Audio("Daten/F.mp3"),
     new Audio("Daten/G.mp3"),
     new Audio("Daten/laugh-1.mp3"),
-    new Audio("Daten/laugh-2.mp3"),
+    new Audio("Daten/laugh-2.mp3")
 ];
 //Funktion 
 function playSample(x) {
     drumpad[x].play();
 }
-;
 //Event
 document.querySelector("#dp1").addEventListener("click", function () {
     playSample(0);
