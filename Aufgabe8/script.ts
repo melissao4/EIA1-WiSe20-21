@@ -17,30 +17,39 @@ function playSample(x: number): void {
     //Event
 document.querySelector("#dp1").addEventListener("click", function (): void {
     playSample(0);
+    recordBeat(0);
     });
 document.querySelector("#dp2").addEventListener("click", function (): void {
     playSample(1);
+    recordBeat(1);
     });
 document.querySelector("#dp3").addEventListener("click", function (): void {
     playSample(2);
+    recordBeat(2);
     });
 document.querySelector("#dp4").addEventListener("click", function (): void {
     playSample(3);
+    recordBeat(3);
     });
 document.querySelector("#dp5").addEventListener("click", function (): void {
     playSample(4);
+    recordBeat(4);
     });
 document.querySelector("#dp6").addEventListener("click", function (): void {
     playSample(5);
+    recordBeat(5);
     });
 document.querySelector("#dp7").addEventListener("click", function (): void {
     playSample(6);
+    recordBeat(6);
     });
 document.querySelector("#dp8").addEventListener("click", function (): void {
     playSample(7);
+    recordBeat(7);
     });
 document.querySelector("#dp9").addEventListener("click", function (): void {
     playSample(8);
+    recordBeat(8);
     });
     
 
@@ -82,14 +91,16 @@ function recordBeat(dynbeatindex: number): void {
 
     // Micro Button Event
 microbutton.addEventListener("click", function (): void {
-        if (microbutton.classList.contains("active")) {
-            microbutton.classList.remove("active");
-            console.log("inaktiv");
-            recording = false;
-        } else {
-            microbutton.classList.add("active");
-            recording = true;
-            console.log("aktiv");
+    if (microbutton.classList.contains("active")) {
+        microbutton.classList.remove("active");
+        console.log("aktiv");
+        recording = false;
+    } 
+
+    else {
+        microbutton.classList.add("active");
+        recording = true;
+        console.log("inaktiv");
         }
     });
 
