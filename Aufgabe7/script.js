@@ -10,7 +10,7 @@ var dp = [
     new Audio("Daten/laugh-2.mp3"),
 ];
 //Funktion 
-function playSample(x) {
+function playbeat(x) {
     dp[x].play();
 }
 ;
