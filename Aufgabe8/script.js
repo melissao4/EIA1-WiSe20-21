@@ -9,7 +9,7 @@ var drumpad = [
     new Audio("Daten/laugh-1.mp3"),
     new Audio("Daten/laugh-2.mp3")
 ];
-//Funktion 
+//Funktion
 function playSample(x) {
     drumpad[x].play();
 }

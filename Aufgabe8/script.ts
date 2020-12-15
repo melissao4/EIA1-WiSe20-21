@@ -8,12 +8,12 @@ const drumpad: HTMLAudioElement [] = [
     new Audio("Daten/G.mp3"),
     new Audio("Daten/laugh-1.mp3"),
     new Audio("Daten/laugh-2.mp3")];
-    
-    //Funktion 
+   
+    //Funktion
 function playSample(x: number): void {
     drumpad[x].play();
     }
-    
+   
     //Event
 document.querySelector("#dp1").addEventListener("click", function (): void {
     playSample(0);
@@ -51,7 +51,7 @@ document.querySelector("#dp9").addEventListener("click", function (): void {
     playSample(8);
     recordBeat(8);
     });
-    
+   
 
     // Variablen
 
@@ -95,7 +95,7 @@ microbutton.addEventListener("click", function (): void {
         microbutton.classList.remove("active");
         console.log("aktiv");
         recording = false;
-    } 
+    }
 
     else {
         microbutton.classList.add("active");
@@ -124,7 +124,7 @@ function loop(pause: boolean): void {
     }
 
     // Trash Button
-    
+   
 
 trashbutton.addEventListener("click", function (): void {
         dynbeat = [];
