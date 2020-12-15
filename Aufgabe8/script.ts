@@ -84,7 +84,6 @@ let recording: boolean = false;
 let i: number;
 
 function recordBeat(i: number): void {
-    console.log("Aufnahme");
     if (recording == true) {
         dynbeat.push(i);
         }

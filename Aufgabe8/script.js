@@ -71,7 +71,6 @@ var dynbeat = [0, 1, 2];
 var recording = false;
 var i;
 function recordBeat(i) {
-    console.log("Aufnahme");
     if (recording == true) {
         dynbeat.push(i);
     }
