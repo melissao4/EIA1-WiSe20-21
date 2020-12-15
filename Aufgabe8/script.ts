@@ -1,13 +1,13 @@
-const drumpad: HTMLAudioElement [] = [
-    new Audio("Daten/kick.mp3"),
-    new Audio("Daten/hihat.mp3"),
-    new Audio("Daten/snare.mp3"),
-    new Audio("Daten/A.mp3"),
-    new Audio("Daten/C.mp3"),
-    new Audio("Daten/F.mp3"),
-    new Audio("Daten/G.mp3"),
-    new Audio("Daten/laugh-1.mp3"),
-    new Audio("Daten/laugh-2.mp3")];
+let drumpad: HTMLAudioElement [] = [];
+drumpad [0] = new Audio("Daten/kick.mp3"),
+drumpad [1] = new Audio("Daten/hihat.mp3"),
+drumpad [2] = new Audio("Daten/snare.mp3"),
+drumpad [3] = new Audio("Daten/A.mp3"),
+drumpad [4] = new Audio("Daten/C.mp3"),
+drumpad [5] = new Audio("Daten/F.mp3"),
+drumpad [6] = new Audio("Daten/G.mp3"),
+drumpad [7] = new Audio("Daten/laugh-1.mp3"),
+drumpad [8] = new Audio("Daten/laugh-2.mp3");
    
     //Funktion
 function playSample(x: number): void {
@@ -57,8 +57,8 @@ document.querySelector("#dp9").addEventListener("click", function (): void {
 
 const playbutton: HTMLElement = document.querySelector("#play");
 const pausebutton: HTMLElement = document.querySelector("#stop");
-const microbutton: HTMLElement = document.querySelector("#micro");
-const trashbutton: HTMLElement = document.querySelector("#trash");
+
+
 
  // Toggle
 function toggleClass(firstbtn: HTMLElement, secondbtn: HTMLElement): void {
@@ -77,6 +77,7 @@ pausebutton.addEventListener("click", function (): void {
     });
 
 // Micro Button Funktion
+const microbutton: HTMLElement = document.querySelector("#micro");
 
 let dynbeat: number[] = [0, 1, 2];
 let recording: boolean;
@@ -93,28 +94,28 @@ function recordBeat(i: number): void {
 microbutton.addEventListener("click", function (): void {
     if (microbutton.classList.contains("active")) {
         microbutton.classList.remove("active");
-        console.log("aktiv");
+        console.log("inaktiv");
         recording = false;
     }
     else {
         microbutton.classList.add("active");
         recording = true;
-        console.log("inaktiv");
+        console.log("aktiv");
         }
     });
 
 // Play und Pause Funktion
 let interval: number;
-let index: number = 0;
+let x: number = 0;
 
 function loop(pause: boolean): void {
         if (pause == true) {
             interval = setInterval(function (): void {
-                playSample(dynbeat[index]);
-                index++;
-                console.log(index);
-                if (index >= dynbeat.length) {
-                    index = 0;
+                playSample(dynbeat[x]);
+                x++;
+                console.log(x);
+                if (x >= dynbeat.length) {
+                    x = 0;
                 }
             },                     500);
         } else {
@@ -123,7 +124,7 @@ function loop(pause: boolean): void {
     }
 
 // Trash Button
-   
+const trashbutton: HTMLElement = document.querySelector("#trash");
 
 trashbutton.addEventListener("click", function (): void {
         dynbeat = [];

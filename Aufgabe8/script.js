@@ -1,14 +1,13 @@
-var drumpad = [
-    new Audio("Daten/kick.mp3"),
-    new Audio("Daten/hihat.mp3"),
-    new Audio("Daten/snare.mp3"),
-    new Audio("Daten/A.mp3"),
-    new Audio("Daten/C.mp3"),
-    new Audio("Daten/F.mp3"),
-    new Audio("Daten/G.mp3"),
-    new Audio("Daten/laugh-1.mp3"),
-    new Audio("Daten/laugh-2.mp3")
-];
+var drumpad = [];
+drumpad[0] = new Audio("Daten/kick.mp3"),
+    drumpad[1] = new Audio("Daten/hihat.mp3"),
+    drumpad[2] = new Audio("Daten/snare.mp3"),
+    drumpad[3] = new Audio("Daten/A.mp3"),
+    drumpad[4] = new Audio("Daten/C.mp3"),
+    drumpad[5] = new Audio("Daten/F.mp3"),
+    drumpad[6] = new Audio("Daten/G.mp3"),
+    drumpad[7] = new Audio("Daten/laugh-1.mp3"),
+    drumpad[8] = new Audio("Daten/laugh-2.mp3");
 //Funktion
 function playSample(x) {
     drumpad[x].play();
@@ -53,8 +52,6 @@ document.querySelector("#dp9").addEventListener("click", function () {
 // Variablen
 var playbutton = document.querySelector("#play");
 var pausebutton = document.querySelector("#stop");
-var microbutton = document.querySelector("#micro");
-var trashbutton = document.querySelector("#trash");
 // Toggle
 function toggleClass(firstbtn, secondbtn) {
     firstbtn.classList.add("hidden");
@@ -69,6 +66,7 @@ pausebutton.addEventListener("click", function () {
     loop(false);
 });
 // Micro Button Funktion
+var microbutton = document.querySelector("#micro");
 var dynbeat = [0, 1, 2];
 var recording;
 var i;
@@ -82,26 +80,26 @@ function recordBeat(i) {
 microbutton.addEventListener("click", function () {
     if (microbutton.classList.contains("active")) {
         microbutton.classList.remove("active");
-        console.log("aktiv");
+        console.log("inaktiv");
         recording = false;
     }
     else {
         microbutton.classList.add("active");
         recording = true;
-        console.log("inaktiv");
+        console.log("aktiv");
     }
 });
 // Play und Pause Funktion
 var interval;
-var index = 0;
+var x = 0;
 function loop(pause) {
     if (pause == true) {
         interval = setInterval(function () {
-            playSample(dynbeat[index]);
-            index++;
-            console.log(index);
-            if (index >= dynbeat.length) {
-                index = 0;
+            playSample(dynbeat[x]);
+            x++;
+            console.log(x);
+            if (x >= dynbeat.length) {
+                x = 0;
             }
         }, 500);
     }
@@ -110,6 +108,7 @@ function loop(pause) {
     }
 }
 // Trash Button
+var trashbutton = document.querySelector("#trash");
 trashbutton.addEventListener("click", function () {
     dynbeat = [];
     console.log("deleted");
