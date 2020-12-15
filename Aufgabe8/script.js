@@ -71,11 +71,11 @@ pausebutton.addEventListener("click", function () {
 // Micro Button Funktion
 var dynbeat = [0, 1, 2];
 var recording;
-var dynbeatindex;
-function recordBeat(dynbeatindex) {
-    console.log("Recording");
+var i;
+function recordBeat(i) {
+    console.log("Aufnahme");
     if (recording == true) {
-        dynbeat.push(dynbeatindex);
+        dynbeat.push(i);
     }
 }
 // Micro Button Event
@@ -103,7 +103,7 @@ function loop(pause) {
             if (index >= dynbeat.length) {
                 index = 0;
             }
-        }, 400);
+        }, 500);
     }
     else {
         clearInterval(interval);

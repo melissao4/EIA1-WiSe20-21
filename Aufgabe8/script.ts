@@ -53,14 +53,14 @@ document.querySelector("#dp9").addEventListener("click", function (): void {
     });
    
 
-    // Variablen
+// Variablen
 
 const playbutton: HTMLElement = document.querySelector("#play");
 const pausebutton: HTMLElement = document.querySelector("#stop");
 const microbutton: HTMLElement = document.querySelector("#micro");
 const trashbutton: HTMLElement = document.querySelector("#trash");
 
-    // Toggle
+ // Toggle
 function toggleClass(firstbtn: HTMLElement, secondbtn: HTMLElement): void {
     firstbtn.classList.add("hidden");
     secondbtn.classList.remove("hidden");
@@ -76,27 +76,26 @@ pausebutton.addEventListener("click", function (): void {
     loop(false);
     });
 
-    // Micro Button Funktion
+// Micro Button Funktion
 
 let dynbeat: number[] = [0, 1, 2];
 let recording: boolean;
-let dynbeatindex: number;
+let i: number;
 
-function recordBeat(dynbeatindex: number): void {
-    console.log("Recording");
+function recordBeat(i: number): void {
+    console.log("Aufnahme");
     if (recording == true) {
-        dynbeat.push(dynbeatindex);
+        dynbeat.push(i);
         }
     }
 
-    // Micro Button Event
+ // Micro Button Event
 microbutton.addEventListener("click", function (): void {
     if (microbutton.classList.contains("active")) {
         microbutton.classList.remove("active");
         console.log("aktiv");
         recording = false;
     }
-
     else {
         microbutton.classList.add("active");
         recording = true;
@@ -104,7 +103,7 @@ microbutton.addEventListener("click", function (): void {
         }
     });
 
-    // Play und Pause Funktion
+// Play und Pause Funktion
 let interval: number;
 let index: number = 0;
 
@@ -117,13 +116,13 @@ function loop(pause: boolean): void {
                 if (index >= dynbeat.length) {
                     index = 0;
                 }
-            },                     400);
+            },                     500);
         } else {
             clearInterval(interval);
         }
     }
 
-    // Trash Button
+// Trash Button
    
 
 trashbutton.addEventListener("click", function (): void {
