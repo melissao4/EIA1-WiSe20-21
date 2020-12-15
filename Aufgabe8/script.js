@@ -68,7 +68,7 @@ pausebutton.addEventListener("click", function () {
 // Micro Button Funktion
 var microbutton = document.querySelector("#micro");
 var dynbeat = [0, 1, 2];
-var recording;
+var recording = false;
 var i;
 function recordBeat(i) {
     console.log("Aufnahme");
@@ -78,15 +78,16 @@ function recordBeat(i) {
 }
 // Micro Button Event
 microbutton.addEventListener("click", function () {
-    if (microbutton.classList.contains("active")) {
+    if (microbutton.classList.contains("inactive")) {
+        microbutton.classList.remove("inactive");
         microbutton.classList.remove("active");
-        console.log("inaktiv");
         recording = false;
     }
     else {
-        microbutton.classList.add("active");
+        (microbutton.classList.contains("active"));
+        microbutton.classList.remove("active");
+        microbutton.classList.remove("inactive");
         recording = true;
-        console.log("aktiv");
     }
 });
 // Play und Pause Funktion

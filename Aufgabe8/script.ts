@@ -80,7 +80,7 @@ pausebutton.addEventListener("click", function (): void {
 const microbutton: HTMLElement = document.querySelector("#micro");
 
 let dynbeat: number[] = [0, 1, 2];
-let recording: boolean;
+let recording: boolean = false;
 let i: number;
 
 function recordBeat(i: number): void {
@@ -92,15 +92,16 @@ function recordBeat(i: number): void {
 
  // Micro Button Event
 microbutton.addEventListener("click", function (): void {
-    if (microbutton.classList.contains("active")) {
+    if (microbutton.classList.contains("inactive")) {
+        microbutton.classList.remove("inactive");
         microbutton.classList.remove("active");
-        console.log("inaktiv");
         recording = false;
     }
     else {
-        microbutton.classList.add("active");
+        (microbutton.classList.contains("active"));
+        microbutton.classList.remove("active");
+        microbutton.classList.remove("inactive");
         recording = true;
-        console.log("aktiv");
         }
     });
 
