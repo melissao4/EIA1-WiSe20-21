@@ -9,7 +9,6 @@ newtask.addEventListener("keypress", function (event) {
 });
 // Neue Task
 function addTask() {
-    console.log("task added");
     var container = document.createElement("div");
     container.className = "container";
     var checkbox = document.createElement("input");
@@ -25,19 +24,16 @@ function addTask() {
     container.appendChild(label);
     container.appendChild(trash);
     trash.addEventListener("click", function () {
-        console.log("task deleted");
         removeTask(container);
     });
     checkbox.addEventListener("click", function () {
         if (checkbox.classList.contains("done")) {
             checkbox.classList.remove("done");
             label.classList.remove("crossedout");
-            console.log("undone");
         }
         else {
             checkbox.classList.add("done");
             label.classList.add("crossedout");
-            console.log("done");
         }
     });
     amount++;

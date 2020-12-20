@@ -11,7 +11,6 @@ newtask.addEventListener("keypress", function (event: KeyboardEvent): void {
 
 // Neue Task
 function addTask(): void { 
-        console.log("task added");
 
         let container: HTMLDivElement = document.createElement("div");
         container.className = "container";
@@ -33,7 +32,6 @@ function addTask(): void {
         container.appendChild(trash);
 
         trash.addEventListener("click", function (): void {
-            console.log("task deleted");
             removeTask(container);
         });
 
@@ -41,11 +39,9 @@ function addTask(): void {
             if (checkbox.classList.contains("done")) {
                 checkbox.classList.remove("done");
                 label.classList.remove("crossedout");
-                console.log("undone");
             } else {
                 checkbox.classList.add("done");
                 label.classList.add("crossedout");
-                console.log("done");
             }
         });
 
