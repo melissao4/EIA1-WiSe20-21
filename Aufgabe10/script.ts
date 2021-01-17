@@ -138,8 +138,8 @@ function secondCounter(): void {
             notCheckedCounter++;
         }
     }
-    checkedCounterDOMElement.innerHTML = checkedCounter + " noch nicht erledigt";
-    notCheckedCounterDOMElement.innerHTML = notCheckedCounter + " erledigt";   
+    checkedCounterDOMElement.innerHTML = checkedCounter + " erledigt";
+    notCheckedCounterDOMElement.innerHTML = notCheckedCounter + " noch nicht erledigt";   
 }
 
 
