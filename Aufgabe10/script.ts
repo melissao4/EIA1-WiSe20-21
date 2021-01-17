@@ -28,11 +28,11 @@ var checkedCounterDOMElement: HTMLElement;
 var notCheckedCounterDOMElement: HTMLElement;
 
 
- //Sprachsteuerung
-
+// tslint:disable-next-line: no-any
 declare const Artyom: any;
 
 window.addEventListener("load", function (): void {
+    // tslint:disable-next-line: no-any
     const artyom: any = new Artyom();
 
     function startContinuousArtyom(): void {
@@ -58,6 +58,7 @@ window.addEventListener("load", function (): void {
     artyom.addCommands({
         indexes: ["erstelle Aufgabe *"],
         smart: true,
+        // tslint:disable-next-line: no-any
         action: function (i: any, wildcard: string): void { 
             allarrays.unshift({
                 todosText: wildcard,
@@ -120,7 +121,7 @@ function drawListToDOM(): void {
 }
 
 function updateCounter(): void {
-    counterDOMElement.innerHTML = allarrays.length + " in total";
+    counterDOMElement.innerHTML = allarrays.length + " insgesamt";
 
 }
 
@@ -137,8 +138,8 @@ function secondCounter(): void {
             notCheckedCounter++;
         }
     }
-    checkedCounterDOMElement.innerHTML = checkedCounter + " checked in total";
-    notCheckedCounterDOMElement.innerHTML = notCheckedCounter + " not checked in total";   
+    checkedCounterDOMElement.innerHTML = checkedCounter + " noch nicht erledigt";
+    notCheckedCounterDOMElement.innerHTML = notCheckedCounter + " erledigt";   
 }
 
 
