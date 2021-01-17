@@ -85,3 +85,8 @@ main {
 .trash:hover {
     color: black;
 }
+
+.VoiceRecord {
+
+    position: relative
+}
